@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../ui/button";
 import Image from "next/image";
+import InglesaiButton from "../ui/inglesai-button";
 
 export default function Banner() {
   return (
@@ -13,6 +13,7 @@ export default function Banner() {
           fill
           sizes="100vw"
           className="object-cover w-full h-full"
+          quality={100}
           priority
         />
       </div>
@@ -23,17 +24,20 @@ export default function Banner() {
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6">
             Smart Academy
           </h1>
-          <p className="text-2xl sm:text-2xl md:text-3xl leading-relaxed max-w-lg ">
+          <p
+            className="text-2xl sm:text-2xl md:text-3xl  max-w-lg "
+            style={{ lineHeight: "1.6" }}
+          >
             Prepara FCE con Inteligencia Artificial y pasa de un b1 a b2 a
             partir de <span className="font-semibold">16€/mes.</span>
           </p>
         </div>
-        <Button
-          size="lg"
-          className="bg-button hover:bg-button-hover text-button-foreground px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg w-full sm:w-auto mt-36"
+        <InglesaiButton
+          className="w-full sm:w-[300px] mt-36 h-[64px]"
+          variant="primary"
         >
           PROBAR GRATIS
-        </Button>
+        </InglesaiButton>
       </div>
     </div>
   );
