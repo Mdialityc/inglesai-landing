@@ -10,6 +10,7 @@ import {
 } from "../ui/navigation-menu";
 import CourseNavigation from "./courses-navigation/CourseNavigation";
 import { courses } from "./courses-navigation/lib/courses";
+import InglesaiLogo from "../assets/inglesai-logo";
 
 export default function Navbar() {
   return (
@@ -17,10 +18,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-button text-2xl font-bold">ingles</span>
-            <span className="text-secondary text-2xl">ai</span>
-            <span className="text-secondary ml-1">✚</span>
+          <Link href="/">
+            <InglesaiLogo />
           </Link>
 
           {/* Navigation Links - Desktop */}
@@ -62,11 +61,10 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="flex gap-2">
-            <div>
-              <Button asChild className="bg-secondary">
-                <Link href="/login">Login</Link>
-              </Button>
-            </div>
+            <Button asChild className="bg-secondary text-lg" size={"lg"}>
+              <Link href="/login">Login</Link>
+            </Button>
+
             <Button
               variant="ghost"
               size="icon"
