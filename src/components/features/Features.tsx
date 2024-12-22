@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <section className="py-16 px-4 flex flex-col">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl  mb-4">
           La metodología de siempre, con la innovación de la
         </h2>
         <p className="text-3xl md:text-4xl font-bold">
