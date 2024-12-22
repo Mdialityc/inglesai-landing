@@ -11,7 +11,7 @@ export default function FeatureCard({ image, title, description }: Props) {
   return (
     <CardContainer className="inter-var max-w-[250px]">
       <CardBody className="flex flex-col items-center text-center p-4 ">
-        <CardItem className="w-20 h-20 mb-4" translateZ="60">
+        <CardItem className="w-20 h-20 mb-7" translateZ="60">
           {image}
         </CardItem>
         <CardItem translateZ="50" className="text-xl font-semibold mb-2">
