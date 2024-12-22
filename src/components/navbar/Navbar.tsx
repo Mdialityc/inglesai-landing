@@ -24,8 +24,8 @@ export default function Navbar() {
           </Link>
 
           {/* Navigation Links - Desktop */}
-          <NavigationMenu>
-            <NavigationMenuList className="flex gap-6 text-xl">
+          <NavigationMenu className="hidden md:flex">
+            <NavigationMenuList className="hidden md:flex gap-6 text-xl">
               <NavigationMenuItem>
                 <Link href="/docs" legacyBehavior passHref>
                   <NavigationMenuLink>Sobre Nosotros</NavigationMenuLink>
@@ -59,15 +59,19 @@ export default function Navbar() {
           </NavigationMenu>
 
           {/* Login Button */}
-          <div>
-            <Button asChild className="bg-secondary">
-              <Link href="/login">Login</Link>
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-background">
+          <div className="flex gap-2">
+            <div>
+              <Button asChild className="bg-secondary">
+                <Link href="/login">Login</Link>
+              </Button>
+            </div>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden text-secondary"
+            >
               <svg
                 className="h-6 w-6"
                 fill="none"
