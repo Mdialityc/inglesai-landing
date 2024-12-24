@@ -13,7 +13,6 @@ export default function ExpandableText({
   title,
   subtitle,
   content,
-  initialHeight = 100,
 }: ExpandableTextProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
