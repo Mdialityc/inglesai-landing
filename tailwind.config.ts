@@ -16,6 +16,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        gradient: {
+          to: "var(--gradient-to)",
+          from: "var(--gradient-from)",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -31,7 +35,7 @@ export default {
         button: {
           DEFAULT: "var(--button)",
           foreground: "var(--button-foreground)",
-		  hover: "var(--button-hover)",
+          hover: "var(--button-hover)",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
