@@ -1,3 +1,4 @@
+import ApiMethod from "@/components/api-method/ApiMethod";
 import Banner from "@/components/banner/Banner";
 import Features from "@/components/features/Features";
 import StartCourse from "@/components/start-course/StartCourse";
@@ -10,6 +11,7 @@ export default function Home() {
       <Features />
       <StartCourse />
       <VirtualAssistant />
+      <ApiMethod />
     </div>
   );
 }
