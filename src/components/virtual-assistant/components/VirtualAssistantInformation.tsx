@@ -1,4 +1,4 @@
-import ExpandableText from "@/components/ui/expandable-text";
+import ExpandableText from "@/components/ui/expandable-text/expandable-text";
 import { Separator } from "@/components/ui/separator";
 import React from "react";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import useExpandableText from "./hooks/useExpandableText";
 
 interface ExpandableTextProps {
   title: string;
@@ -15,7 +15,7 @@ export default function ExpandableText({
   content,
   initialHeight = "100px",
 }: ExpandableTextProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const { isExpanded, contentRef, setIsExpanded } = useExpandableText();
 
   return (
     <div className="max-w-2xl p-6">
@@ -23,10 +23,11 @@ export default function ExpandableText({
       <h2 className="text-4xl mb-4">{subtitle}</h2>
       <div className="relative">
         <div
+          ref={contentRef}
           style={
             !isExpanded
               ? { maxHeight: initialHeight, overflow: "hidden" }
-              : { maxHeight: "300px", overflowX: "auto" }
+              : { maxHeight: "300px", overflowY: "auto" }
           }
           className="transition-all duration-300 ease-in-out"
         >
