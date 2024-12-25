@@ -1,12 +1,12 @@
+import FloatingItems from "@/components/ui/floating-items";
+import React from "react";
 import FloatingBookVariantDrch from "@/components/assets/floating-book-variant-drch";
 import FloatingBookVariantIzq from "@/components/assets/floating-book-variant-izq";
 import FloatingSnowFlakeVariantMedium from "@/components/assets/floating-snowflake-variant-medium";
 import FloatingSnowflakeVariantSmall from "@/components/assets/floating-snowflake-variant-small";
-import React from "react";
-
-export default function FloatingItems() {
+export default function StartCourseFloatingItems() {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <FloatingItems>
       {/* books */}
       <div className="absolute top-[28%] left-[1%] 2xl:left-[6%]">
         <FloatingBookVariantIzq />
@@ -27,6 +27,6 @@ export default function FloatingItems() {
       <div className="absolute bottom-[15%] left-[6%] 2xl:left-[10%]">
         <FloatingSnowFlakeVariantMedium />
       </div>
-    </div>
+    </FloatingItems>
   );
 }
