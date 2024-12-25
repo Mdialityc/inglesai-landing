@@ -1,5 +1,6 @@
-import FloatingItems from "./components/FloatingItems";
-import StartCourseImage from "./components/StartCourseImage";
+import StartCourseFloatingItems from "./components/StartCourseFloatingItems";
+import FloatingItems from "./components/StartCourseFloatingItems";
+
 import StartCourseInformation from "./components/StartCourseInformation";
 
 export default function StartCourse() {
@@ -10,7 +11,7 @@ export default function StartCourse() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-60">
           {/* Left side - Image */}
-          <StartCourseImage />
+          <StartCourseFloatingItems />
           {/* Right side - Content */}
           <StartCourseInformation />
         </div>
