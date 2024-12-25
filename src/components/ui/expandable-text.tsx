@@ -26,7 +26,7 @@ export default function ExpandableText({
           style={
             !isExpanded
               ? { maxHeight: initialHeight, overflow: "hidden" }
-              : undefined
+              : { maxHeight: "300px", overflowX: "auto" }
           }
           className="transition-all duration-300 ease-in-out"
         >
