@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-export default function StartCourseImage() {
+export default function OurCoursesImage() {
   return (
-    <div className="w-full hidden lg:flex relative z-30 lg:-mt-24">
+    <div className="w-[600px] h-[800px] hidden lg:flex relative z-30 lg:-mt-24">
       <Image
-        src="/images/teacher official exam.png"
+        src="/images/Our Courses.png"
         alt="Course instructor"
         fill
         className="container"
