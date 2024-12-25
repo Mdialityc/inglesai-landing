@@ -15,7 +15,7 @@ export default function OptionPanelSections({
   children,
 }: Props) {
   return (
-    <div className="w-full md:w-1/2 flex flex-col gap-8 md:gap-12 mb-16">
+    <div className="w-full flex flex-col gap-8 md:gap-12 mb-16">
       {sectionTitle && (
         <div className="inline-flex px-6 py-2 bg-[#BFCAF8] text-[#1B2A5D] text-3xl font-medium self-start">
           {sectionTitle}
