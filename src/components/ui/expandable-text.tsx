@@ -18,7 +18,7 @@ export default function ExpandableText({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="max-w-xl p-6">
+    <div className="max-w-2xl p-6">
       <h1 className="text-6xl font-bold mb-2">{title}</h1>
       <h2 className="text-4xl mb-4">{subtitle}</h2>
       <div className="relative">

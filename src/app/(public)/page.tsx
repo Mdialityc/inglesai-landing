@@ -1,3 +1,4 @@
+import AiAgent from "@/components/ai-agent/AiAgent";
 import ApiMethod from "@/components/api-method/ApiMethod";
 import Banner from "@/components/banner/Banner";
 import Features from "@/components/features/Features";
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <StartCourse />
       <VirtualAssistant />
+      <AiAgent />
       <ApiMethod />
     </div>
   );
