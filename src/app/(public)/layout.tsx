@@ -1,4 +1,5 @@
 import Navbar from "@/app/components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 export default function Layout({
   children,
@@ -9,6 +10,7 @@ export default function Layout({
     <div className="flex flex-col">
       <Navbar />
       <main className="pt-10">{children}</main>
+      <Footer />
     </div>
   );
 }
