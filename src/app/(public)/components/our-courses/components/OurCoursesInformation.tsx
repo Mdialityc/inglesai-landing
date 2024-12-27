@@ -4,7 +4,7 @@ import React from "react";
 export default function OurCoursesInformation() {
   return (
     <div className="mt-32">
-      <OptionPanelSections title="Nuestros Cursos">
+      <OptionPanelSections title="Nuestros Cursos" titleButton="VER CURSOS">
         <p className="text-[#1B2A5D] text-2xl">
           Elaborados para sacar el máximo partido de la IA
         </p>

@@ -8,6 +8,7 @@ export default function StartCourseInformation() {
       sectionTitle="Exámen Oficial"
       title="Curso FCE"
       subtitle="Preparación FCE por IA"
+      titleButton="COMENZAR CURSO"
     >
       <ul className="flex flex-col gap-4  text-lg md:text-2xl">
         {skills.map((item) => (

@@ -5,6 +5,7 @@ interface Props {
   sectionTitle?: string;
   title?: string;
   subtitle?: string;
+  titleButton?: string;
   children: ReactNode;
 }
 
@@ -12,6 +13,7 @@ export default function OptionPanelSections({
   sectionTitle,
   title,
   subtitle,
+  titleButton,
   children,
 }: Props) {
   return (
@@ -38,12 +40,14 @@ export default function OptionPanelSections({
 
         {children}
       </div>
-      <InglesaiButton
-        className="mt-8 w-full sm:w-[276px] h-[62px]"
-        variant="primary"
-      >
-        COMENZAR CURSO
-      </InglesaiButton>
+      {titleButton && (
+        <InglesaiButton
+          className="mt-8 w-full sm:w-[276px] h-[62px]"
+          variant="primary"
+        >
+          {titleButton}
+        </InglesaiButton>
+      )}
     </div>
   );
 }
