@@ -7,10 +7,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../ui/navigation-menu";
+} from "../../../components/ui/navigation-menu";
 import CourseNavigation from "./courses-navigation/CourseNavigation";
 import { courses } from "./courses-navigation/lib/courses";
-import InglesaiLogo from "../assets/inglesai-logo";
+import InglesaiLogo from "../../../components/assets/inglesai-logo";
 
 export default function Navbar() {
   return (

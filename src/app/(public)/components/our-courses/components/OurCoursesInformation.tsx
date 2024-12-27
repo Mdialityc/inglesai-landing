@@ -1,4 +1,4 @@
-import OptionPanelSections from "@/components/option-panel-sections/OptionPanelSections";
+import OptionPanelSections from "@/app/(public)/components/option-panel-sections/OptionPanelSections";
 import React from "react";
 
 export default function OurCoursesInformation() {

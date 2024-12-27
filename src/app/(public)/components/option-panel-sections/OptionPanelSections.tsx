@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import InglesaiButton from "../ui/inglesai-button";
+import InglesaiButton from "../../../../components/ui/inglesai-button";
 
 interface Props {
   sectionTitle?: string;

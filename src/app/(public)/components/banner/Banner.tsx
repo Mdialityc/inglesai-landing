@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import InglesaiButton from "../ui/inglesai-button";
+import InglesaiButton from "@/components/ui/inglesai-button";
+
 
 export default function Banner() {
   return (
