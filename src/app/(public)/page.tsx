@@ -6,6 +6,7 @@ import OurCourses from "@/app/(public)/components/our-courses/OurCourses";
 import StartCourse from "@/app/(public)/components/start-course/StartCourse";
 import VirtualAssistant from "@/app/(public)/components/virtual-assistant/VirtualAssistant";
 import Banner from "./components/banner/Banner";
+import Plans from "./components/plans/Plans";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <OurCourses />
       <AiAgent />
       <ApiMethod />
+      <Plans />
       <Opinions />
     </div>
   );
