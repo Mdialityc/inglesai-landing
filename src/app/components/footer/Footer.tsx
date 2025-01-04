@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Facebook, Twitter, Youtube } from "lucide-react";
 import InglesaiLogoFooter from "@/components/assets/inglesai-logo-footer";
 import { guarantees } from "./lib/guarantees";
 import { navegations } from "./lib/nagetations";
 import { services } from "./lib/services";
 import YoutubePlayer from "@/components/partials/YoutubePlayer/YoutubePlayer";
+import SocialMedia from "./components/social-media/SocialMedia";
 
 export default function Footer() {
   return (
@@ -58,20 +58,7 @@ export default function Footer() {
               </div>
 
               {/* Follow us Section */}
-              <div className="flex flex-col gap-5">
-                <h3 className="text-xl font-semibold mb-4">Follow us</h3>
-                <div className="flex space-x-4">
-                  <Link href="#" className="hover:text-blue-200">
-                    <Facebook className="w-6 h-6" />
-                  </Link>
-                  <Link href="#" className="hover:text-blue-200">
-                    <Twitter className="w-6 h-6" />
-                  </Link>
-                  <Link href="#" className="hover:text-blue-200">
-                    <Youtube className="w-6 h-6" />
-                  </Link>
-                </div>
-              </div>
+              <SocialMedia />
             </div>
             {/* YouTube Player Section */}
             <div className="w-full my-12">
