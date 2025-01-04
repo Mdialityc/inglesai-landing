@@ -4,6 +4,7 @@ import InglesaiLogoFooter from "@/components/assets/inglesai-logo-footer";
 import { guarantees } from "./lib/guarantees";
 import { navegations } from "./lib/nagetations";
 import { services } from "./lib/services";
+import YoutubePlayer from "@/components/partials/YoutubePlayer/YoutubePlayer";
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
           <p className="text-lg">Academia de inglés inteligente.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row gap-36">
           {/* Guarantees Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Garantías</h3>
@@ -26,53 +27,63 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Navegation Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Navegación</h3>
-            <ul className="space-y-2 text-lg">
-              {navegations.map((navegation, index) => (
-                <li key={index}>
-                  <Link href={navegation.path} className="hover:underline">
-                    {navegation.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div className="flex flex-col gap-7">
+            <div className="flex flex-wrap  justify-center gap-10">
+              {/* Navegation Section */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">Navegación</h3>
+                <ul className="space-y-2 text-lg">
+                  {navegations.map((navegation, index) => (
+                    <li key={index}>
+                      <Link href={navegation.path} className="hover:underline">
+                        {navegation.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {/* Services Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Servicios</h3>
-            <ul className="space-y-2 text-lg">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <Link href="/" className="hover:underline">
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+              {/* Services Section */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">Servicios</h3>
+                <ul className="space-y-2 text-lg">
+                  {services.map((service, index) => (
+                    <li key={index}>
+                      <Link href="/" className="hover:underline">
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {/* Follow us Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Follow us</h3>
-            <div className="flex space-x-4">
-              <Link href="#" className="hover:text-blue-200">
-                <Facebook className="w-6 h-6" />
-              </Link>
-              <Link href="#" className="hover:text-blue-200">
-                <Twitter className="w-6 h-6" />
-              </Link>
-              <Link href="#" className="hover:text-blue-200">
-                <Youtube className="w-6 h-6" />
-              </Link>
+              {/* Follow us Section */}
+              <div className="flex flex-col gap-5">
+                <h3 className="text-xl font-semibold mb-4">Follow us</h3>
+                <div className="flex space-x-4">
+                  <Link href="#" className="hover:text-blue-200">
+                    <Facebook className="w-6 h-6" />
+                  </Link>
+                  <Link href="#" className="hover:text-blue-200">
+                    <Twitter className="w-6 h-6" />
+                  </Link>
+                  <Link href="#" className="hover:text-blue-200">
+                    <Youtube className="w-6 h-6" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* YouTube Player Section */}
+            <div className="w-full my-12">
+              <div className="aspect-w-16 aspect-h-9">
+                <YoutubePlayer videoUrl="https://www.youtube.com/watch?v=MSdHxxIMD0Y" />
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 pt-8 border-t border-blue-400 flex flex-col md:flex-row justify-between items-center space-y-4 font-bold md:space-y-0">
+        <div className="pt-8 border-t border-blue-400 flex flex-col md:flex-row justify-between items-center space-y-4 font-bold md:space-y-0">
           <div>
             <p>
               You are not logged in.{" "}
