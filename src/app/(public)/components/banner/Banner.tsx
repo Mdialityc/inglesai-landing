@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import InglesaiButton from "@/components/ui/inglesai-button";
 
-
 export default function Banner() {
   return (
     <div className="relative w-full min-h-[100svh] flex ">
@@ -15,6 +14,8 @@ export default function Banner() {
           sizes="100vw"
           className="object-cover w-full h-full"
           quality={100}
+          placeholder="blur"
+          blurDataURL="/images/banner image place holder.png"
           priority
         />
       </div>
