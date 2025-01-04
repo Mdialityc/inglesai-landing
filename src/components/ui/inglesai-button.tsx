@@ -16,7 +16,7 @@ export default function InglesaiButton({
   action,
 }: Props) {
   const primaryVariant =
-    "bg-button hover:bg-button-hover text-button-foreground";
+    "bg-button hover:bg-button-hover text-button-foreground ";
   const secondaryVariant =
     "bg-secondary hover:bg-button-hover text-button-foreground";
   const tertiaryVariant =
@@ -33,10 +33,17 @@ export default function InglesaiButton({
         : tertiaryVariant
     }`
   );
+
+  const animation = clsx(
+    `focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-300 ease-in-out transform hover:scale-105`
+  );
+
   return (
     <Button
       size="lg"
-      className={`${bgColor} text-xl font-semibold rounded-lg` + className}
+      className={
+        `${bgColor} ${animation} text-xl font-semibold rounded-lg` + className
+      }
       onClick={action}
     >
       {children}
